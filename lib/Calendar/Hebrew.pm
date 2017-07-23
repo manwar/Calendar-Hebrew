@@ -72,7 +72,8 @@ the mean Gregorian calendar year.
     +--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 The package L<App::calendr> provides command line tool  C<calendr> to display the
-supported calendars on the terminal.
+supported calendars on the terminal. Support for  C<Hebrew Calendar>  is provided
+by L<App::calendr> v0.16 or above.
 
 =head1 SYNOPSIS
 
