@@ -1,6 +1,6 @@
 package Calendar::Hebrew;
 
-$Calendar::Hebrew::VERSION   = '0.01';
+$Calendar::Hebrew::VERSION   = '0.02';
 $Calendar::Hebrew::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ Calendar::Hebrew - Interface to Hebrew Calendar.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
@@ -38,6 +38,11 @@ sub BUILD {
         $self->month($self->date->month);
     }
 }
+
+=head1 NOTE
+
+The C<Calendar::Hebrew> was released on Sunday 23rd July 2017 to mark the completion
+of L<1000th consecutive days of releasing to CPAN|http://blogs.perl.org/users/mohammad_s_anwar/2017/07/1000th-consecutive-days-releasing-to-cpan.html>.
 
 =head1 DESCRIPTION
 
@@ -123,10 +128,10 @@ by L<App::calendr> v0.16 or above.
     |     1 | Yom Sheni     | Sunday                                            |
     |     2 | Yom Shelishi  | Monday                                            |
     |     3 | Yom Revil     | Tuesday                                           |
-    |     4 | Yom Hamishi   | Thursday                                          |
-    |     5 | Yom Shishi    | Friday                                            |
-    |     6 | Shabbat       | Saturday                                          |
-    |     0 | Yom Rishon    | Sunday                                            |
+    |     4 | Yom Hamishi   | Wednesday                                         |
+    |     5 | Yom Shishi    | Thursday                                          |
+    |     6 | Shabbat       | Friday                                            |
+    |     0 | Yom Rishon    | Saturday                                          |
     +-------+---------------+---------------------------------------------------+
 
 =head1 CONSTRUCTOR
@@ -229,6 +234,12 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 =head1 REPOSITORY
 
 L<https://github.com/manwar/Calendar-Hebrew>
+
+=head1 ACKNOWLEDGEMENTS
+
+The C<Calendar::Hebrew> namespace was originally owned by Yitzchak Scott-Thoennes.
+Yitzchak has kindly transferred the ownership to me, so that I can keep working on
+it.
 
 =head1 SEE ALSO
 
